@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Duper Happiness</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Super Duper Happiness</h1>
+      <p class="subtitle">Make Today Brighter ✨</p>
+
+      <section class="card">
+        <h2>Daily Check-in</h2>
+
+        <label for="mood">Mood (1-5)</label>
+        <input id="mood" type="number" min="1" max="5" value="3" />
+
+        <label for="gratitude">One-line Gratitude</label>
+        <input id="gratitude" type="text" maxlength="120" placeholder="I’m grateful for..." />
+
+        <label class="quest">
+          <input id="quest" type="checkbox" />
+          Tiny Quest completed
+        </label>
+
+        <button id="saveBtn">Happiness +1 unlocked</button>
+      </section>
+
+      <section class="card">
+        <h2>Stats</h2>
+        <p id="streak">Streak: 0 days</p>
+      </section>
+
+      <section class="card">
+        <h2>Last 7 Days</h2>
+        <ul id="timeline"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
